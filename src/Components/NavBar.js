@@ -1,14 +1,18 @@
 import React from 'react';
+import Home from './HomePage';
+import About from './AboutPage';
 import {
     BrowserRouter as Router,
+    Routes,
+    Route,
     Link
 } from "react-router-dom"
 
 function NavBar(props) {
     return (
-        <div class="topnav">
 
-            <Router>
+        <Router>
+            <div class="topnav">
                 {/* Centered App Name */}
                 <div className="topnav-centered">
                     <Link to="/">{props.appName}</Link>
@@ -24,9 +28,14 @@ function NavBar(props) {
                     <Link to="/about">About</Link>
                 </div>
 
-            </Router>
-
-        </div>
+            </div>
+            <div>
+                <Routes>
+                  <Route path="/" element={<Home/>} />
+                  <Route path="/about" element={<About/>} />
+                </Routes>
+            </div>
+        </Router>
     );
 }
 
