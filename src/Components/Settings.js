@@ -1,11 +1,11 @@
 import React from 'react'
 
-function About() {
+function Settings() {
     return (
         <body className='App-Body'>
-            <h1>About Me</h1>
+            <h1>Settings</h1>
         </body>
     );
 }
 
-export default About
+export default Settings

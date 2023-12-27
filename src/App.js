@@ -1,7 +1,6 @@
 import './App.css';
 import Footer from './Components/Footer';
-import Header from './Components/Header';
-import NavBar from './Components/NavBar';
+import Navigation from './Components/Navigation';
 
 function App() {
 
@@ -10,11 +9,7 @@ function App() {
   return (
     <div>
 
-      <Header appName = {AppName} />
-
-      <div className="App-header">
-          <NavBar appName = {AppName} />
-      </div>
+      <Navigation appName = {AppName} />
 
       <Footer/>
 
